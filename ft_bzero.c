@@ -6,7 +6,7 @@
 /*   By: mazeghou <mazeghou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/25 15:48:32 by mazeghou          #+#    #+#             */
-/*   Updated: 2024/11/05 00:08:58 by mazeghou         ###   ########.fr       */
+/*   Updated: 2024/11/05 00:22:15 by mazeghou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	ft_bzero(void *s, size_t n)
 {
-	char    *s2;
+	char	*s2;
 
 	s2 = (char *)s;
 	while (n > 0)
