@@ -6,30 +6,30 @@
 /*   By: mazeghou <mazeghou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/04 19:51:21 by mazeghou          #+#    #+#             */
-/*   Updated: 2024/11/04 21:19:13 by mazeghou         ###   ########.fr       */
+/*   Updated: 2024/11/05 00:20:22 by mazeghou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static int to_trim(const char *set, char c)
+static int	to_trim(const char *set, char c)
 {
-    int i;
-    
-    i = 0;
-    while (set[i])
-    {
-        if (c == set[i])
-            return (1);
-        i++;
-    }
-    return (0);
+	int	i;
+
+	i = 0;
+	while (set[i])
+	{
+		if (c == set[i])
+			return (1);
+		i++;
+	}
+	return (0);
 }
 
-char *trim(const char *s1, size_t start, size_t end)
+char	*trim(const char *s1, size_t start, size_t end)
 {
-	char *str;
-	size_t i;
+	char	*str;
+	size_t	i;
 
 	i = 0;
 	if (end <= 0 || start >= ft_strlen(s1))
@@ -46,11 +46,10 @@ char *trim(const char *s1, size_t start, size_t end)
 	return (str);
 }
 
-
-char *ft_strtrim(const char *s1, const char *set)
+char	*ft_strtrim(const char *s1, const char *set)
 {
-	int i;
-	int j;
+	int	i;
+	int	j;
 
 	i = 0;
 	j = ft_strlen(s1) + 1;
@@ -64,10 +63,12 @@ char *ft_strtrim(const char *s1, const char *set)
 }
 
 /*
-int main()
+int	main(void)
 {
+	char	*set;
+
 	char *str = "ababaaaMy name is Simonbbaaabbad"; // 17
-	char *set = "ab";
+	set = "ab";
 	printf("%s", ft_strtrim(str, set));
 }
 */

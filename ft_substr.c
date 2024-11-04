@@ -6,16 +6,16 @@
 /*   By: mazeghou <mazeghou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/04 19:43:00 by mazeghou          #+#    #+#             */
-/*   Updated: 2024/11/04 19:49:50 by mazeghou         ###   ########.fr       */
+/*   Updated: 2024/11/05 00:20:33 by mazeghou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char *ft_substr(const char *s, unsigned int start, size_t len)
+char	*ft_substr(const char *s, unsigned int start, size_t len)
 {
-	char *result;
-	int	i;
+	char			*result;
+	int				i;
 	unsigned int	total_len;
 
 	i = 0;
@@ -32,9 +32,11 @@ char *ft_substr(const char *s, unsigned int start, size_t len)
 }
 
 /*
-int main()
+int	main(void)
 {
-	char *str = "Bonjour comment ca va?";
+	char	*str;
+
+	str = "Bonjour comment ca va?";
 	printf("%s", ft_substr(str, 5, 8));
 }
 */

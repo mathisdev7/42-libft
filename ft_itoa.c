@@ -6,15 +6,15 @@
 /*   By: mazeghou <mazeghou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/04 18:19:48 by mazeghou          #+#    #+#             */
-/*   Updated: 2024/11/04 19:50:07 by mazeghou         ###   ########.fr       */
+/*   Updated: 2024/11/05 00:14:34 by mazeghou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int s_len(char *str)
+int	s_len(char *str)
 {
-	int i;
+	int	i;
 
 	i = 0;
 	while (str[i])
@@ -24,7 +24,7 @@ int s_len(char *str)
 	return (i);
 }
 
-int num_len(int n, int index)
+int	num_len(int n, int index)
 {
 	if (n < 0)
 	{
@@ -37,16 +37,16 @@ int num_len(int n, int index)
 	}
 	else
 	{
-		return num_len(n / 10, index + 1);
+		return (num_len(n / 10, index + 1));
 	}
 }
 
-char *ft_itoa(int n)
+char	*ft_itoa(int n)
 {
-	char *result;
-	int	nb;
-	int i;
-	long nbr;
+	char	*result;
+	int		nb;
+	int		i;
+	long	nbr;
 
 	nbr = n;
 	nb = num_len(n, 0);
@@ -57,12 +57,12 @@ char *ft_itoa(int n)
 	if (nbr < 0)
 		nbr = -nbr;
 	i = nb - 1;
-    while (nbr != 0)
-    {
-        result[i] = ((nbr % 10) + 48);
-        nbr = nbr / 10;
-        i--;
-    }
+	while (nbr != 0)
+	{
+		result[i] = ((nbr % 10) + 48);
+		nbr = nbr / 10;
+		i--;
+	}
 	if (n < 0)
 		result[0] = '-';
 	result[nb] = '\0';
@@ -72,7 +72,9 @@ char *ft_itoa(int n)
 /*
 int main (void)
 {
-	int nb = 1220;
+	int	nb;
+
+	nb = 1220;
 	printf("%s", ft_itoa(nb));
 }
 */

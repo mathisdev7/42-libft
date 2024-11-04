@@ -6,14 +6,14 @@
 /*   By: mazeghou <mazeghou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/25 14:50:14 by mazeghou          #+#    #+#             */
-/*   Updated: 2024/10/25 14:58:41 by mazeghou         ###   ########.fr       */
+/*   Updated: 2024/11/05 00:14:06 by mazeghou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_isprint(int c)
+int	ft_isprint(int c)
 {
-    if (c >= 32 && c <= 126)
-        return (1);
-    else
-        return (0);
+	if (c >= 32 && c <= 126)
+		return (1);
+	else
+		return (0);
 }

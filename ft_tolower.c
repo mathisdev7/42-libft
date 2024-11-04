@@ -6,15 +6,15 @@
 /*   By: mazeghou <mazeghou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/25 14:59:03 by mazeghou          #+#    #+#             */
-/*   Updated: 2024/11/03 16:51:27 by mazeghou         ###   ########.fr       */
+/*   Updated: 2024/11/05 00:20:48 by mazeghou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_tolower(int c)
+int	ft_tolower(int c)
 {
-    if (c >= 65 && c <= 90)
-    {
-        c += 32;
-    }
-    return (c);
+	if (c >= 65 && c <= 90)
+	{
+		c += 32;
+	}
+	return (c);
 }

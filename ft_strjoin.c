@@ -6,18 +6,18 @@
 /*   By: mazeghou <mazeghou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/04 19:25:00 by mazeghou          #+#    #+#             */
-/*   Updated: 2024/11/04 19:49:54 by mazeghou         ###   ########.fr       */
+/*   Updated: 2024/11/05 00:18:46 by mazeghou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char *ft_strjoin(const char *s1, const char *s2)
+char	*ft_strjoin(const char *s1, const char *s2)
 {
-	size_t total_len;
-	size_t i;
-	size_t j;
-	char *result;
+	size_t	total_len;
+	size_t	i;
+	size_t	j;
+	char	*result;
 
 	total_len = ft_strlen(s1) + ft_strlen(s2);
 	i = 0;
@@ -39,10 +39,13 @@ char *ft_strjoin(const char *s1, const char *s2)
 	return (result);
 }
 /*
-int main(void)
+int	main(void)
 {
-	char *s1 = "hello ";
-	char *s2 = "world";
+	char	*s1;
+	char	*s2;
+
+	s1 = "hello ";
+	s2 = "world";
 	printf("%s", ft_strjoin(s1, s2));
 }
 */

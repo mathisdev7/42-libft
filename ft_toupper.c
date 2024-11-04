@@ -6,15 +6,15 @@
 /*   By: mazeghou <mazeghou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/25 14:59:03 by mazeghou          #+#    #+#             */
-/*   Updated: 2024/10/25 15:01:45 by mazeghou         ###   ########.fr       */
+/*   Updated: 2024/11/05 00:20:59 by mazeghou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int		ft_toupper(int c)
+int	ft_toupper(int c)
 {
-    if (c >= 97 && c <= 122)
-    {
-        c -= 32;
-    }
-    return (c);
+	if (c >= 97 && c <= 122)
+	{
+		c -= 32;
+	}
+	return (c);
 }

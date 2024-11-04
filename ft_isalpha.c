@@ -6,14 +6,14 @@
 /*   By: mazeghou <mazeghou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/25 14:50:14 by mazeghou          #+#    #+#             */
-/*   Updated: 2024/10/25 14:53:23 by mazeghou         ###   ########.fr       */
+/*   Updated: 2024/11/05 00:13:36 by mazeghou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_isalpha(int c)
+int	ft_isalpha(int c)
 {
-    if ((c >= 65 && c <= 90) || (c >= 97 && c <= 122))
-        return (1);
-    else
-        return (0);
+	if ((c >= 65 && c <= 90) || (c >= 97 && c <= 122))
+		return (1);
+	else
+		return (0);
 }
