@@ -6,11 +6,11 @@
 /*   By: mazeghou <mazeghou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/25 15:34:36 by mazeghou          #+#    #+#             */
-/*   Updated: 2024/11/03 16:50:11 by mazeghou         ###   ########.fr       */
+/*   Updated: 2024/11/04 19:32:22 by mazeghou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <libft.h>
+#include "libft.h"
 
 void *ft_memcpy(void *dst, const void *src, size_t n)
 {

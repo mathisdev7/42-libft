@@ -6,11 +6,11 @@
 /*   By: mazeghou <mazeghou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/25 15:48:32 by mazeghou          #+#    #+#             */
-/*   Updated: 2024/11/03 16:49:43 by mazeghou         ###   ########.fr       */
+/*   Updated: 2024/11/04 19:43:23 by mazeghou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <libft.h>
+#include "libft.h"
 
 void ft_bzero(void *s, size_t n)
 {

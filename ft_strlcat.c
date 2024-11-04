@@ -6,11 +6,11 @@
 /*   By: mazeghou <mazeghou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/26 07:41:04 by mazeghou          #+#    #+#             */
-/*   Updated: 2024/11/03 16:49:24 by mazeghou         ###   ########.fr       */
+/*   Updated: 2024/11/04 19:43:23 by mazeghou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <libft.h>
+#include "libft.h"
 
 size_t ft_strlcat(char *dst, const char *src, size_t dstsize)
 {
