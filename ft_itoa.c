@@ -6,7 +6,7 @@
 /*   By: mazeghou <mazeghou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/04 18:19:48 by mazeghou          #+#    #+#             */
-/*   Updated: 2024/11/05 15:31:02 by mazeghou         ###   ########.fr       */
+/*   Updated: 2024/11/05 18:34:44 by mazeghou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,10 +59,10 @@ char	*ft_itoa(int n)
 	return (result);
 }
 
-// int main (void)
-// {
-// 	int	nb;
+int main (void)
+{
+	int	nb;
 
-// 	nb = -10;
-// 	printf("%s", ft_itoa(nb));
-// }
+	nb = 350;
+	printf("%s", ft_itoa(nb));
+}

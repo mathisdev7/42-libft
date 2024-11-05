@@ -6,7 +6,7 @@
 /*   By: mazeghou <mazeghou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/03 16:55:39 by mazeghou          #+#    #+#             */
-/*   Updated: 2024/11/05 15:55:02 by mazeghou         ###   ########.fr       */
+/*   Updated: 2024/11/05 18:34:30 by mazeghou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,32 +54,47 @@ int	s_len(const char *str)
 	return (i);
 }
 
+char *fill_in_words(const char *str, int start, int end)
+{
+	int len;
+	char	*word;
+	int	i;
+
+	len = end - start;
+	word = malloc(sizeof(char) * (len + 1));
+	if (!word)
+		return (NULL);
+	i = 0;
+	while (start < end)
+		word[i++] = str[start++];
+	word[i] = '\0';
+	return (word);
+}
+
 char	**ft_copy(const char *str, char c, char **result)
 {
-	int	i;
+	int	start;
+	int	end;
 	int	current_pos;
-	int	j;
 
-	i = 0;
+	start = 0;
+	end = 0;
 	current_pos = 0;
-	j = 0;
-	result[current_pos] = malloc(sizeof(char *) * s_len(str));
-	while (str[i])
+	while (str[start])
 	{
-		if (str[i] != 0 && str[i] != c)
+		while (str[start] == c)
+			start++;
+		end = start;
+		while (str[end] && str[end] != c)
+			end++;
+		if (end > start)
 		{
-			result[current_pos][j] = str[i];
-			j++;
-		}
-		else if (str[i] == c)
-		{
-			result[current_pos][j] = '\0';
+			result[current_pos] = fill_in_words(str, start, end);
 			current_pos++;
-			result[current_pos] = malloc(sizeof(char *) * s_len(str));
-			j = 0;
 		}
-		i++;
+		start = end;
 	}
+	result[current_pos] = NULL;
 	return (result);
 }
 
@@ -102,17 +117,17 @@ char	**ft_split(char const *s, char c)
 	return (str);
 }
 
-int	main(void)
-{
-	char const	str[] = "   lorem   ipsum dolor     sit amet, consectetur   adipiscing elit. Sed non risus. Suspendisse   ";
-	int			i;
-	char		**splitted;
+// int	main(void)
+// {
+// 	char const	str[] = "   lorem   ipsum dolor     sit amet, consectetur   adipiscing elit. Sed non risus. Suspendisse   ";
+// 	int			i;
+// 	char		**splitted;
 
-	i = 0;
-	splitted = ft_split(str, ' ');
-	while (splitted[i])
-	{
-		printf("%s\n", splitted[i]);
-		i++;
-	}
-}
+// 	i = 0;
+// 	splitted = ft_split(str, ' ');
+// 	while (splitted[i])
+// 	{
+// 		printf("%s\n", splitted[i]);
+// 		i++;
+// 	}
+// }
