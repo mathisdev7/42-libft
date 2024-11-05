@@ -6,7 +6,7 @@
 /*   By: mazeghou <mazeghou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/26 08:09:12 by mazeghou          #+#    #+#             */
-/*   Updated: 2024/11/05 14:51:28 by mazeghou         ###   ########.fr       */
+/*   Updated: 2024/11/05 23:27:32 by mazeghou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,10 +41,10 @@ int	ft_atoi(const char *str)
 	return (result * sign);
 }
 
-int	main(void)
-{
-	char	*str;
+// int	main(void)
+// {
+// 	char	*str;
 
-	str = "-123456";
-	printf("%d", ft_atoi(str));
-}
+// 	str = "-123456";
+// 	printf("%d", ft_atoi(str));
+// }
