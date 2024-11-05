@@ -6,12 +6,20 @@
 /*   By: mazeghou <mazeghou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/03 16:55:39 by mazeghou          #+#    #+#             */
-/*   Updated: 2024/11/05 01:07:10 by mazeghou         ###   ########.fr       */
+/*   Updated: 2024/11/05 15:55:02 by mazeghou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include <stdio.h>
+
+// int ft_is_separator(const char c)
+// {
+// 	if (c == 9 || c == 10 || c == 11 || c == 12
+// 		|| c == 13 || c == 32)
+// 			return (1);
+// 	return (0);
+// }
 
 int	count_words(const char *str, char c)
 {
@@ -58,12 +66,12 @@ char	**ft_copy(const char *str, char c, char **result)
 	result[current_pos] = malloc(sizeof(char *) * s_len(str));
 	while (str[i])
 	{
-		if (str[i] != c)
+		if (str[i] != 0 && str[i] != c)
 		{
 			result[current_pos][j] = str[i];
 			j++;
 		}
-		else
+		else if (str[i] == c)
 		{
 			result[current_pos][j] = '\0';
 			current_pos++;
@@ -96,15 +104,15 @@ char	**ft_split(char const *s, char c)
 
 int	main(void)
 {
-	char const	str[] = "      split       this for   me  !       ";
+	char const	str[] = "   lorem   ipsum dolor     sit amet, consectetur   adipiscing elit. Sed non risus. Suspendisse   ";
 	int			i;
 	char		**splitted;
 
 	i = 0;
-	splitted = ft_split(str, '-');
+	splitted = ft_split(str, ' ');
 	while (splitted[i])
 	{
-		printf("%d -> %s, ", i, splitted[i]);
+		printf("%s\n", splitted[i]);
 		i++;
 	}
 }
