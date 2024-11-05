@@ -6,11 +6,12 @@
 /*   By: mazeghou <mazeghou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/03 16:55:39 by mazeghou          #+#    #+#             */
-/*   Updated: 2024/11/05 00:17:32 by mazeghou         ###   ########.fr       */
+/*   Updated: 2024/11/05 01:07:10 by mazeghou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <stdio.h>
 
 int	count_words(const char *str, char c)
 {
@@ -19,18 +20,16 @@ int	count_words(const char *str, char c)
 
 	i = 0;
 	words = 0;
-	if (str[i] == c)
-	{
-		words++;
-		i++;
-	}
 	while (str[i])
 	{
-		if (str[i] != c && (str[i + 1] == c || str[i + 1] == '\0'))
+		while (str[i] == c)
+			i++;
+		if (str[i] && str[i] != c)
 		{
 			words++;
+			while (str[i] && str[i] != c)
+				i++;
 		}
-		i++;
 	}
 	return (words);
 }
@@ -80,21 +79,24 @@ char	**ft_split(char const *s, char c)
 {
 	int		words;
 	char	**str;
+	int		i;
 
 	words = count_words(s, c);
+	i = 0;
 	str = malloc(sizeof(char *) * (words + 1));
 	if (!str)
 	{
 		return (NULL);
 	}
+	while (s[i] == c)
+		i++;
 	str = ft_copy(s, c, str);
 	return (str);
 }
 
-/*
 int	main(void)
 {
-	char const	str[] = "yo-les-bluds";
+	char const	str[] = "      split       this for   me  !       ";
 	int			i;
 	char		**splitted;
 
@@ -102,8 +104,7 @@ int	main(void)
 	splitted = ft_split(str, '-');
 	while (splitted[i])
 	{
-		printf("%s\n", splitted[i]);
+		printf("%d -> %s, ", i, splitted[i]);
 		i++;
 	}
 }
-*/

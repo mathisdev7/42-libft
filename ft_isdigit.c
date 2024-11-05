@@ -6,14 +6,16 @@
 /*   By: mazeghou <mazeghou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/25 14:50:14 by mazeghou          #+#    #+#             */
-/*   Updated: 2024/11/05 00:13:55 by mazeghou         ###   ########.fr       */
+/*   Updated: 2024/11/05 00:37:19 by mazeghou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
+
 int	ft_isdigit(int c)
 {
-	if (c >= 0 && c <= 9)
-		return (1);
+	if (c >= 48 && c <= 57)
+		return (c);
 	else
 		return (0);
 }

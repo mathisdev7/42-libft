@@ -6,7 +6,7 @@
 /*   By: mazeghou <mazeghou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/25 15:19:46 by mazeghou          #+#    #+#             */
-/*   Updated: 2024/11/05 00:15:04 by mazeghou         ###   ########.fr       */
+/*   Updated: 2024/11/05 00:30:45 by mazeghou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,5 +27,5 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 			return ((unsigned char)str[i] - (unsigned char)str2[i]);
 		i++;
 	}
-	return (NULL);
+	return (0);
 }

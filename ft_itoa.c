@@ -6,23 +6,11 @@
 /*   By: mazeghou <mazeghou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/04 18:19:48 by mazeghou          #+#    #+#             */
-/*   Updated: 2024/11/05 00:14:34 by mazeghou         ###   ########.fr       */
+/*   Updated: 2024/11/05 00:34:20 by mazeghou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-int	s_len(char *str)
-{
-	int	i;
-
-	i = 0;
-	while (str[i])
-	{
-		i++;
-	}
-	return (i);
-}
 
 int	num_len(int n, int index)
 {
