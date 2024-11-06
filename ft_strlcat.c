@@ -6,7 +6,7 @@
 /*   By: mazeghou <mazeghou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/26 07:41:04 by mazeghou          #+#    #+#             */
-/*   Updated: 2024/11/06 05:13:34 by mazeghou         ###   ########.fr       */
+/*   Updated: 2024/11/06 21:33:18 by mazeghou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 	else
 	{
 		ft_memcpy(dst + dst_len, src, copy_len);
-		dst[dst_len - copy_len] = '\0';
 	}
+	dst[dst_len + copy_len] = '\0';
 	return (dst_len + src_len);
 }
