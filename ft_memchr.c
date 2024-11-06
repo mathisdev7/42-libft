@@ -6,7 +6,7 @@
 /*   By: mazeghou <mazeghou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/25 15:19:46 by mazeghou          #+#    #+#             */
-/*   Updated: 2024/11/05 00:14:55 by mazeghou         ###   ########.fr       */
+/*   Updated: 2024/11/06 22:15:16 by mazeghou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,3 +29,16 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	}
 	return (NULL);
 }
+
+/*
+int main()
+{
+	char buffer[10];
+
+	for (size_t i = 0; i < 10; i++)
+	{
+		buffer[i] = 'a' + i;
+	}
+	printf("%s\n", (char *)ft_memchr(buffer, 'c', 10));
+}
+*/

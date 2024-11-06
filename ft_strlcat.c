@@ -6,7 +6,7 @@
 /*   By: mazeghou <mazeghou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/26 07:41:04 by mazeghou          #+#    #+#             */
-/*   Updated: 2024/11/06 21:33:18 by mazeghou         ###   ########.fr       */
+/*   Updated: 2024/11/06 22:40:12 by mazeghou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,3 +32,17 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 	dst[dst_len + copy_len] = '\0';
 	return (dst_len + src_len);
 }
+
+/*
+int main() {
+    char dest[20] = "Hello, ";
+    const char *src = "world!";
+    
+    printf("before ft_strlcat: '%s'\n", dest);
+    
+    size_t result = ft_strlcat(dest, src, sizeof(dest));
+    
+    printf("after ft_strlcat: '%s'\n", dest);
+    printf("total size of the concatenated str : %zu\n", result);
+}
+*/

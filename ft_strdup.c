@@ -6,7 +6,7 @@
 /*   By: mazeghou <mazeghou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/26 08:06:52 by mazeghou          #+#    #+#             */
-/*   Updated: 2024/11/05 00:18:39 by mazeghou         ###   ########.fr       */
+/*   Updated: 2024/11/06 22:34:48 by mazeghou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,3 +29,21 @@ char	*ft_strdup(const char *s1)
 	dst[i] = 0;
 	return (dst);
 }
+
+/*
+int main() {
+    const char *original = "Hello, world!";
+    
+    char *duplicate = ft_strdup(original);
+    
+    if (duplicate == NULL) {
+        printf("error\n");
+        return 1;
+    }
+
+    printf("original: %s\n", original);
+    printf("duplicate: %s\n", duplicate);
+
+    free(duplicate);
+}
+*/

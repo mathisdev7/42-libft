@@ -6,12 +6,11 @@
 /*   By: mazeghou <mazeghou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/04 19:51:21 by mazeghou          #+#    #+#             */
-/*   Updated: 2024/11/06 05:13:44 by mazeghou         ###   ########.fr       */
+/*   Updated: 2024/11/06 22:59:16 by mazeghou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
 
 char	*ft_strtrim(char const *s1, const char *set)
 {
@@ -36,7 +35,7 @@ char	*ft_strtrim(char const *s1, const char *set)
 // {
 // 	char	*set;
 
-// 	char *str = "lorem ipsum dolor sit amet"; // 17
+// 	char *str = "lorem ipsum dolor sit amet"; 
 // 	set = "te";
 // 	printf("%s", ft_strtrim(str, set));
 // }

@@ -6,7 +6,7 @@
 /*   By: mazeghou <mazeghou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/06 18:55:53 by mazeghou          #+#    #+#             */
-/*   Updated: 2024/11/06 21:31:06 by mazeghou         ###   ########.fr       */
+/*   Updated: 2024/11/06 22:44:41 by mazeghou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,3 +29,24 @@ char	*ft_strmapi(const char *s, char (*f)(unsigned int, char))
 	res[i] = 0;
 	return (res);
 }
+
+/*
+char add_offset(unsigned int index, char c) {
+    return c + (char)index;
+}
+
+int main() {
+    const char *src = "abcdef";
+
+    printf("before ft_strmapi: %s\n", src);
+
+    char *result = ft_strmapi(src, add_offset);
+
+    if (result) {
+        printf("after ft_strmapi: %s\n", result);
+        free(result);
+    } else {
+        printf("Error\n");
+    }
+}
+*/

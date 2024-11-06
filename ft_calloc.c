@@ -6,7 +6,7 @@
 /*   By: mazeghou <mazeghou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/26 07:55:23 by mazeghou          #+#    #+#             */
-/*   Updated: 2024/11/05 00:11:35 by mazeghou         ###   ########.fr       */
+/*   Updated: 2024/11/06 21:57:06 by mazeghou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,3 +28,27 @@ void	*ft_calloc(size_t count, size_t size)
 	}
 	return (ptr);
 }
+
+/*
+int main() {
+    size_t n = 5;
+    size_t *arr;
+
+    arr = calloc(n, sizeof(int));
+
+    if (arr == NULL) {
+        printf("failed\n");
+        return 1;
+    }
+
+    printf("after calloc:\n");
+    for (size_t i = 0; i < n; i++) {
+        printf("%zu ", arr[i]);
+    }
+    printf("\n");
+
+    free(arr);
+
+    return 0;
+}
+*/

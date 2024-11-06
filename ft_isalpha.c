@@ -6,9 +6,11 @@
 /*   By: mazeghou <mazeghou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/25 14:50:14 by mazeghou          #+#    #+#             */
-/*   Updated: 2024/11/05 00:13:36 by mazeghou         ###   ########.fr       */
+/*   Updated: 2024/11/06 22:02:07 by mazeghou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include <stdio.h>
 
 int	ft_isalpha(int c)
 {
@@ -17,3 +19,15 @@ int	ft_isalpha(int c)
 	else
 		return (0);
 }
+
+/*
+int main()
+{
+	char al = 'a';
+	char al2 = 'z';
+	char not_al = '+';
+	printf("a = %d\n", ft_isalpha(al));
+	printf("z = %d\n", ft_isalpha(al2));
+	printf("not a = %d\n", ft_isalpha(not_al));
+}
+*/
