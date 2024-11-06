@@ -6,18 +6,17 @@
 /*   By: mazeghou <mazeghou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/05 21:28:34 by mazeghou          #+#    #+#             */
-/*   Updated: 2024/11/05 23:57:02 by mazeghou         ###   ########.fr       */
+/*   Updated: 2024/11/06 05:13:16 by mazeghou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-
-
 #include "libft.h"
-#include <stdio.h>
 
 int	num_len(int n, int index)
 {
-	long nbr = n;
+	long	nbr;
+
+	nbr = n;
 	if (nbr < 0)
 	{
 		index++;
@@ -61,7 +60,9 @@ char	*ft_itoa(int n)
 /*
 int main (void)
 {
-	int	nb = -10;
+	int	nb;
+
+	nb = -10;
 	printf("%s\n", ft_itoa(nb));
 }
 */

@@ -1,35 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memmove.c                                       :+:      :+:    :+:   */
+/*   ft_putstr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mazeghou <mazeghou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/25 15:34:36 by mazeghou          #+#    #+#             */
-/*   Updated: 2024/11/06 05:13:24 by mazeghou         ###   ########.fr       */
+/*   Created: 2024/11/06 05:16:43 by mazeghou          #+#    #+#             */
+/*   Updated: 2024/11/06 05:18:44 by mazeghou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memmove(void *dst, const void *src, size_t n)
+void	ft_putstr_fd(char *s, int fd)
 {
-	unsigned char		*tmp_dst;
-	const unsigned char	*tmp_src;
+	int	i;
 
-	if (!dst || !src)
-		return (NULL);
-	tmp_dst = (unsigned char *)dst;
-	tmp_src = (const unsigned char *)src;
-	if (tmp_dst > tmp_src)
+	i = 0;
+	while (s[i])
 	{
-		tmp_dst += n;
-		tmp_src += n;
-		while (n--)
-			*(--tmp_dst) = *(--tmp_src);
+		write(fd, &s[i], 1);
+		i++;
 	}
-	else
-		while (n--)
-			*(tmp_dst++) = *(tmp_src++);
-	return (dst);
 }

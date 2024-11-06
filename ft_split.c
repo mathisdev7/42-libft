@@ -6,20 +6,12 @@
 /*   By: mazeghou <mazeghou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/03 16:55:39 by mazeghou          #+#    #+#             */
-/*   Updated: 2024/11/05 18:34:30 by mazeghou         ###   ########.fr       */
+/*   Updated: 2024/11/06 05:12:52 by mazeghou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include <stdio.h>
-
-// int ft_is_separator(const char c)
-// {
-// 	if (c == 9 || c == 10 || c == 11 || c == 12
-// 		|| c == 13 || c == 32)
-// 			return (1);
-// 	return (0);
-// }
 
 int	count_words(const char *str, char c)
 {
@@ -54,11 +46,11 @@ int	s_len(const char *str)
 	return (i);
 }
 
-char *fill_in_words(const char *str, int start, int end)
+char	*fill_in_words(const char *str, int start, int end)
 {
-	int len;
+	int		len;
 	char	*word;
-	int	i;
+	int		i;
 
 	len = end - start;
 	word = malloc(sizeof(char) * (len + 1));
@@ -119,7 +111,8 @@ char	**ft_split(char const *s, char c)
 
 // int	main(void)
 // {
-// 	char const	str[] = "   lorem   ipsum dolor     sit amet, consectetur   adipiscing elit. Sed non risus. Suspendisse   ";
+// 	char const	str[] = "   lorem   ipsum dolor     sit amet,
+// consectetur   adipiscing elit. Sed non risus. Suspendisse   ";
 // 	int			i;
 // 	char		**splitted;
 
