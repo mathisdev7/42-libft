@@ -1,9 +1,0 @@
-{
-    "files.associations": {
-		"queue": "c",
-		"stack": "c",
-		"random": "c",
-		"libft.h": "c",
-		"__locale": "c"
-	}
-}
