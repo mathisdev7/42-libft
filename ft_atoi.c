@@ -6,12 +6,11 @@
 /*   By: mazeghou <mazeghou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/26 08:09:12 by mazeghou          #+#    #+#             */
-/*   Updated: 2024/11/06 05:13:03 by mazeghou         ###   ########.fr       */
+/*   Updated: 2024/11/07 17:10:35 by mazeghou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
 
 int	ft_atoi(const char *str)
 {

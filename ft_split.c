@@ -6,12 +6,11 @@
 /*   By: mazeghou <mazeghou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/03 16:55:39 by mazeghou          #+#    #+#             */
-/*   Updated: 2024/11/06 05:12:52 by mazeghou         ###   ########.fr       */
+/*   Updated: 2024/11/07 17:11:39 by mazeghou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
 
 int	count_words(const char *str, char c)
 {
