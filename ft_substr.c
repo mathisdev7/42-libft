@@ -6,7 +6,7 @@
 /*   By: mazeghou <mazeghou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/04 19:43:00 by mazeghou          #+#    #+#             */
-/*   Updated: 2024/11/05 00:20:33 by mazeghou         ###   ########.fr       */
+/*   Updated: 2024/11/09 00:13:00 by mazeghou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ char	*ft_substr(const char *s, unsigned int start, size_t len)
 
 	i = 0;
 	total_len = start + len;
-	result = malloc(sizeof(char *) * (len - start));
+	result = malloc(sizeof * result * (len + 1));
 	while (total_len != start)
 	{
 		result[i] = s[start];
@@ -37,6 +37,7 @@ int	main(void)
 	char	*str;
 
 	str = "Bonjour comment ca va?";
-	printf("%s", ft_substr(str, 5, 8));
+	printf("%s", ft_substr(str, 10, 11));
+
 }
 */

@@ -27,9 +27,6 @@ CFLAGS = -Wall -Werror -Wextra -I ./
 ${LIB}:	${OBJS}
 		ar -rsc ${LIB} ${OBJS}
 
-bonus:	${OBJSALL}
-		ar -rsc ${LIB} ${OBJSALL}
-
 all: 	${LIB}
 
 clean:
