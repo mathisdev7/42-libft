@@ -6,7 +6,7 @@
 /*   By: mazeghou <mazeghou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/04 19:51:21 by mazeghou          #+#    #+#             */
-/*   Updated: 2024/11/09 00:10:47 by mazeghou         ###   ########.fr       */
+/*   Updated: 2024/11/11 11:41:25 by mazeghou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ char	*ft_strtrim(char const *s1, const char *set)
 		return (NULL);
 	start = 0;
 	end = ft_strlen(s1) - 1;
-	while (end <= start && ft_strchr(set, s1[start]))
+	while (start <= end && ft_strchr(set, s1[start]))
 		start++;
 	if (start > end)
 	{
