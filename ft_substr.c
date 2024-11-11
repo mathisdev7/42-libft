@@ -6,7 +6,7 @@
 /*   By: mazeghou <mazeghou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/04 19:43:00 by mazeghou          #+#    #+#             */
-/*   Updated: 2024/11/09 00:13:00 by mazeghou         ###   ########.fr       */
+/*   Updated: 2024/11/11 09:34:27 by mazeghou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,8 @@ char	*ft_substr(const char *s, unsigned int start, size_t len)
 	i = 0;
 	total_len = start + len;
 	result = malloc(sizeof * result * (len + 1));
+	if (!result)
+		return (NULL);
 	while (total_len != start)
 	{
 		result[i] = s[start];
