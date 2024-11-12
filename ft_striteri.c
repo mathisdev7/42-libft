@@ -6,7 +6,7 @@
 /*   By: mazeghou <mazeghou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/06 21:28:22 by mazeghou          #+#    #+#             */
-/*   Updated: 2024/11/09 00:08:00 by mazeghou         ###   ########.fr       */
+/*   Updated: 2024/11/12 14:35:08 by mazeghou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,7 @@ void increment_char(unsigned int index, char *c) {
 }
 
 int main() {
-    char str[] = "Hello, world!";
+    char *str = NULL;
     
     printf("before ft_striteri: %s\n", str);
     
